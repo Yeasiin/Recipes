@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Link from "next/link";
 import { createClient } from "contentful";
-import RecipeCard from "../components/RecipeCard";
+import RecipeCard from "./../../components/RecipeCard";
 
 export default function Recipes({ recipes }) {
   return (
@@ -11,7 +10,7 @@ export default function Recipes({ recipes }) {
       </Head>
 
       <div>
-        <section className="hero">
+        {/*    <section className="hero">
           <div className="container">
             <div className="hero-container">
               <div className="hero-content">
@@ -22,11 +21,9 @@ export default function Recipes({ recipes }) {
                   Here you'll find a collection of delicious recipes that your
                   family will love, all tested and approved by
                 </p>
-                <Link href="/recipes" >
-                  <a  className="btn btn-main">
-                    Start Cooking
-                  </a>
-                </Link>
+                <a href="#" className="btn btn-main">
+                  Start Cooking
+                </a>
               </div>
               <img
                 className="featuredImage"
@@ -35,20 +32,17 @@ export default function Recipes({ recipes }) {
               />
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="recipes">
           <div className="container">
-            <h2 className="recipes-title">explore recipes</h2>
+            <h2 className="recipes-title">explore All the recipes</h2>
 
             <div className="recipes-content">
-              {recipes.slice(0, 6).map((recipe) => (
+              {recipes.map((recipe) => (
                 <RecipeCard key={recipe.sys.id} recipe={recipe} />
               ))}
             </div>
-            <Link href="/recipes">
-              <a className="btn btn-secondary">All Recipes</a>
-            </Link>
           </div>
         </section>
       </div>

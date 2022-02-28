@@ -13,7 +13,7 @@ function Skeleton() {
           margin: 20px auto;
         }
         .skeleton > div {
-          background: #dbcc1a;
+          background: #ddd;
           border-radius: 4px;
           margin: 20px 0;
         }
