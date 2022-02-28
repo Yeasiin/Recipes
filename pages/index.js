@@ -22,15 +22,13 @@ export default function Recipes({ recipes }) {
                   Here you'll find a collection of delicious recipes that your
                   family will love, all tested and approved by
                 </p>
-                <Link href="/recipes" >
-                  <a  className="btn btn-main">
-                    Start Cooking
-                  </a>
+                <Link href="/recipes">
+                  <a className="btn btn-main">Start Cooking</a>
                 </Link>
               </div>
               <img
                 className="featuredImage"
-                src="featuredimage.png"
+                src="https://res.cloudinary.com/yex/image/upload/v1646088471/storage/featuredimage_s9lgv9.png"
                 alt="Hero content image"
               />
             </div>

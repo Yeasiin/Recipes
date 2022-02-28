@@ -7,7 +7,10 @@ export default function Layout({ children }) {
         <div className="container">
           <div className="header-brand">
             <Link href="/">
-              <img src="logo.svg" alt="Recipes" />
+              <img
+                src="https://res.cloudinary.com/yex/image/upload/v1646088232/storage/logo_ka5uhb.svg"
+                alt="Recipes"
+              />
             </Link>
             <nav>
               <ul className="nav-list">
@@ -38,7 +41,7 @@ export default function Layout({ children }) {
         <div className="container">
           <div className="footer-brand">
             <div>
-              <img src="logo-light.svg" alt="" />
+              <img src="https://res.cloudinary.com/yex/image/upload/v1646088232/storage/logo-light_v6uwmg.svg" alt="" />
               <p>Save your time looking for recipes</p>
             </div>
             <div className="newsletter">
