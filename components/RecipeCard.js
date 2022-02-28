@@ -2,8 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 function RecipeCard({ recipe }) {
-  const { title, cookingTime, slug, featuredImage, thumbnail, type } =
-    recipe.fields;
+  const { title, slug, thumbnail, type } = recipe.fields;
   return (
     <Link href={`/recipes/${slug}`}>
       <div className="recipe-content">

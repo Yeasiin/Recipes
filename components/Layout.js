@@ -7,7 +7,7 @@ export default function Layout({ children }) {
         <div className="container">
           <div className="header-brand">
             <Link href="/">
-              <img src="img/logo.svg" alt="Recipes" />
+              <img src="logo.svg" alt="Recipes" />
             </Link>
             <nav>
               <ul className="nav-list">
@@ -38,7 +38,7 @@ export default function Layout({ children }) {
         <div className="container">
           <div className="footer-brand">
             <div>
-              <img src="img/logo-light.svg" alt="" />
+              <img src="logo-light.svg" alt="" />
               <p>Save your time looking for recipes</p>
             </div>
             <div className="newsletter">

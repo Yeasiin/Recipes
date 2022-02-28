@@ -30,7 +30,7 @@ export default function Recipes({ recipes }) {
               </div>
               <img
                 className="featuredImage"
-                src="img/featuredimage.png"
+                src="featuredimage.png"
                 alt="Hero content image"
               />
             </div>

@@ -8,32 +8,7 @@ export default function Recipes({ recipes }) {
       <Head>
         <title>Recipes</title>
       </Head>
-
       <div>
-        {/*    <section className="hero">
-          <div className="container">
-            <div className="hero-container">
-              <div className="hero-content">
-                <h1 className="hero-title">
-                  Save your time looking for <span>recipes</span>
-                </h1>
-                <p className="hero-details">
-                  Here you'll find a collection of delicious recipes that your
-                  family will love, all tested and approved by
-                </p>
-                <a href="#" className="btn btn-main">
-                  Start Cooking
-                </a>
-              </div>
-              <img
-                className="featuredImage"
-                src="img/featuredimage.png"
-                alt="Hero content image"
-              />
-            </div>
-          </div>
-        </section> */}
-
         <section className="recipes">
           <div className="container">
             <h2 className="recipes-title">explore All the recipes</h2>
