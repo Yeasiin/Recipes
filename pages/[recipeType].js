@@ -1,8 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { createClient } from "contentful";
-import RecipeCard from "./../../components/RecipeCard";
-import Skeleton from "../../components/Skeleton";
+import RecipeCard from "../components/RecipeCard";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE,
@@ -17,7 +16,6 @@ export default function Recipes({ recipes }) {
   function capitalize(word) {
     if (word) return word.charAt(0).toUpperCase() + word.slice(1);
   }
-  if (!recipes) return <Skeleton />;
 
   return (
     <>
@@ -56,7 +54,7 @@ export async function getStaticPaths() {
       { params: { recipeType: "lunch" } },
       { params: { recipeType: "dinner" } },
     ],
-    fallback: true,
+    fallback: false,
   };
 }
 

@@ -12,17 +12,17 @@ export default function Layout({ children }) {
             <nav>
               <ul className="nav-list">
                 <li>
-                  <Link href="/category/breakfast">
+                  <Link href="/breakfast">
                     <a className="nav-link">Breakfast</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/category/lunch">
+                  <Link href="/lunch">
                     <a className="nav-link">Lunch</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/category/dinner">
+                  <Link href="/dinner">
                     <a className="nav-link">Dinner</a>
                   </Link>
                 </li>
