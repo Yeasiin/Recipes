@@ -41,19 +41,18 @@ export default function Recipes({ recipes }) {
 }
 
 export async function getStaticPaths() {
-  // const res = await client.getEntries({ content_type: "recipe" });
+  const res = await client.getEntries({ content_type: "recipe" });
 
-  /* const paths = res.items.map((item) => {
+  // Selecting the recipes type
+  const recipesType = new Set(res.items.map((item) => item.fields.type));
 
-  }); */
+  // taking only unique value and preparing for paths value
+  const paths = [...new Set(recipesType)].map((item) => ({
+    params: { recipeType: item },
+  }));
 
-  //  TODO: Make the Paths dynamic
   return {
-    paths: [
-      { params: { recipeType: "breakfast" } },
-      { params: { recipeType: "lunch" } },
-      { params: { recipeType: "dinner" } },
-    ],
+    paths,
     fallback: false,
   };
 }
@@ -77,7 +76,6 @@ export async function getStaticProps(context) {
     props: {
       recipes: res.items,
     },
-    revalidate: 1,
-    // revalidate: 60 * 60 * 5,
+    revalidate: 60 * 60 * 2,
   };
 }

@@ -41,7 +41,10 @@ export default function Layout({ children }) {
         <div className="container">
           <div className="footer-brand">
             <div>
-              <img src="https://res.cloudinary.com/yex/image/upload/v1646088232/storage/logo-light_v6uwmg.svg" alt="" />
+              <img
+                src="https://res.cloudinary.com/yex/image/upload/v1646088232/storage/logo-light_v6uwmg.svg"
+                alt=""
+              />
               <p>Save your time looking for recipes</p>
             </div>
             <div className="newsletter">
