@@ -20,7 +20,7 @@ export default function Recipes({ recipes }) {
                 </h1>
                 <p className="hero-details">
                   Here you'll find a collection of delicious recipes that your
-                  family will love, all tested and approved by
+                  family will love, all tested and approved 
                 </p>
                 <Link href="/recipes">
                   <a className="btn btn-main">Start Cooking</a>

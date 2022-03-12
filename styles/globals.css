@@ -183,7 +183,9 @@ hr {
   font-size: 1.4rem;
   letter-spacing: 1px;
 }
-
+.dot {
+  display: none;
+}
 @media (max-width: 62.5em) {
   html {
     font-size: 50%;
@@ -216,18 +218,27 @@ hr {
     justify-content: center;
     display: none;
   }
-  nav {
+
+  .dot {
     width: 30px;
-    height: 2px;
-    background-color: #f00;
-    padding: 1rem 0;
+    height: 3px;
+    background-color: #ff5555;
+    display: inline-block;
+    margin-top: 1.5rem;
   }
-  nav::before,
-  nav::after {
+  .dot::before,
+  .dot::after {
+    content: "";
     width: 30px;
-    height: 2px;
-    margin: 1rem 0;
-    background-color: #f00;
+    height: 3px;
+    background-color: #ff5555;
+    display: inline-block;
+  }
+  .dot::before {
+    margin-bottom: 3px;
+  }
+  .dot::after {
+    margin-bottom: 12px;
   }
 }
 

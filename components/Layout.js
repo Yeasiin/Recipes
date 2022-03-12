@@ -13,6 +13,7 @@ export default function Layout({ children }) {
               />
             </Link>
             <nav>
+              <span className="dot"></span>
               <ul className="nav-list">
                 <li>
                   <Link href="/breakfast">
