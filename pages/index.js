@@ -1,9 +1,21 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { createClient } from "contentful";
 import RecipeCard from "../components/RecipeCard";
+// For Google Analytic
+import ReactGA from "react-ga4";
+ReactGA.initialize("G-FK64NRPJM2");
 
 export default function Recipes({ recipes }) {
+  useEffect(() => {
+    // Google Analytic Set
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -20,7 +32,7 @@ export default function Recipes({ recipes }) {
                 </h1>
                 <p className="hero-details">
                   Here you'll find a collection of delicious recipes that your
-                  family will love, all tested and approved 
+                  family will love, all tested and approved
                 </p>
                 <Link href="/recipes">
                   <a className="btn btn-main">Start Cooking</a>
